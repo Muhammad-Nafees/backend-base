@@ -1,1 +1,1 @@
-npm start
+HOW CAN PROJECT RUN ? "npm start"
