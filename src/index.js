@@ -15,7 +15,7 @@ connection_DB().then(() => {
 })
 
 // user auth routes
-app.use("/api",all_routes);
+app.use("/api", all_routes);
 
 app.get("/home", (req, res) => {
   return res.status(200).json({ message: "wellcome doctorServices backend" });

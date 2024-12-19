@@ -17,6 +17,7 @@ export const tokenGenerate = (userId) => {
 };
 
 export class Bcrypt_Service {
+
     static bcrypt_hash_password = async (payload) => {
         const salt = await bcrypt.genSalt(12)
         const secure_password = await bcrypt.hash(payload, salt)
@@ -27,4 +28,5 @@ export class Bcrypt_Service {
         const password_compare = await bcrypt.compare(user_password, password_hash)
         return password_compare
     }
+
 }

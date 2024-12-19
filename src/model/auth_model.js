@@ -9,6 +9,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    confirmPassword: {
+        type: String,
+        required: true,
+    },
     phone_number: {
         type: String,
         required: true,
@@ -17,7 +21,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         enum: ["doctor", "patient", "admin"],
         required: true
-    }
+    },
 }, { timestamps: true }
 );
 
